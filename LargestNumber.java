@@ -10,26 +10,17 @@ public class LargestNumber {
 		String c = String.valueOf(ch); 
 		return c; 
 	} 
-
-	// function to find the largest number 
-	// with given conditions. 
 	static int largestNum(int num) 
-	{ 
-		// converting the number to the string 
+	{  
 		String num_in_str = "" + num; 
 		String temp = num_in_str; 
-
-		// swamping each digit 
 		for (int i = 0; i < num_in_str.length(); i++) { 
 			for (int j = i + 1; j < num_in_str.length(); 
-				j++) { 
-
-				// Swapping and checking for the larger 
+				j++) 
+			{ 
 				num_in_str = swap(num_in_str, i, j); 
 				if (temp.compareTo(num_in_str) < 0) 
 					temp = num_in_str; 
-
-				// Reverting the changes 
 				num_in_str = swap(num_in_str, i, j); 
 			} 
 		} 
@@ -48,5 +39,4 @@ public class LargestNumber {
 		System.out.println(largestNum(num)); 
 	} 
 } 
-
-// This code is contributed by Prerena Saini 
+ 
