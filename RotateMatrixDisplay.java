@@ -1,5 +1,5 @@
 import java.io.*; 
-class RotateMatrix { 
+class RotateMatrixDisplay { 
 	static void rotateMatrix( int N, int mat[][]) 
 	{ 
 		for (int x = 0; x < N / 2; x++)
